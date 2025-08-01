@@ -8,14 +8,15 @@ use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
-use Filament\Tables\Table;
+use Filament\Tables\Actions\ActionGroup;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\ViewAction;
-use Filament\Tables\Actions\ActionGroup;
+use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -30,16 +31,24 @@ class UserResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')
-                    ->required()
-                    ->minLength(3)
-                    ->maxLength(255)
-                    ->label('Nombre'),
-            
-                TextInput::make('email')
-                    ->required()
-                    ->email()
-                    ->label('Correo Electrónico'),
+                SpatieMediaLibraryFileUpload::make('avatar'),
+
+                Section::make('Información del Usuario')
+                    ->description('Detalles básicos del usuario')
+                    ->columns(2)
+                    ->schema([
+                        TextInput::make('name')
+                            ->required()
+                            ->minLength(3)
+                            ->maxLength(255)
+                            ->label('Nombre'),
+
+                        TextInput::make('email')
+                            ->required()
+                            ->email()
+                            ->label('Correo Electrónico'),
+                    ])
+                    ->columnSpanFull(),
 
                 Section::make('Roles y Permisos')
                     ->description('Asignar roles y permisos al usuario')
@@ -82,7 +91,7 @@ class UserResource extends Resource
             ->actions([
                 ActionGroup::make([
                     EditAction::make(),
-                    ViewAction::make(),                   
+                    ViewAction::make(),
                 ]),
             ])
             ->bulkActions([
