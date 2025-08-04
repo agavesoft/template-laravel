@@ -2,8 +2,8 @@
     "$schema": "https://getcomposer.org/schema.json",
     "name": "agavesoft/template-laravel",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "version": "v1.1.2",
+    "description": "The skeleton application for the Laravel framework in Agavesoft.",
+    "version": "v1.2.0",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
