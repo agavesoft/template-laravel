@@ -19,6 +19,7 @@
         "spatie/laravel-activitylog": "^4.10",
         "spatie/laravel-medialibrary": "^11.13",
         "spatie/laravel-permission": "^6.21",
+        "spatie/laravel-tags": "^4.10",
         "tightenco/ziggy": "^2.4",
         "z3d0x/filament-logger": "^0.8.0"
     },
