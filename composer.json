@@ -2,8 +2,8 @@
     "$schema": "https://getcomposer.org/schema.json",
     "name": "agavesoft/template-laravel",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "version": "v1.1.2",
+    "description": "The skeleton application for the Laravel framework in Agavesoft.",
+    "version": "v1.2.0",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
@@ -11,6 +11,7 @@
         "althinect/filament-spatie-roles-permissions": "^2.3",
         "filament/filament": "^3.3",
         "filament/spatie-laravel-media-library-plugin": "^3.2",
+        "filament/spatie-laravel-tags-plugin": "^3.2",
         "inertiajs/inertia-laravel": "^2.0",
         "laravel/framework": "^12.0",
         "laravel/sanctum": "^4.0",
@@ -19,6 +20,7 @@
         "spatie/laravel-activitylog": "^4.10",
         "spatie/laravel-medialibrary": "^11.13",
         "spatie/laravel-permission": "^6.21",
+        "spatie/laravel-tags": "^4.10",
         "tightenco/ziggy": "^2.4",
         "z3d0x/filament-logger": "^0.8.0"
     },
