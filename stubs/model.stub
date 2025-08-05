@@ -4,17 +4,19 @@ namespace {{ namespace }};
 
 {{ factoryImport }}
 
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Activitylog\LogOptions;
 use Spatie\Tags\HasTags;
+use Spatie\DeletedModels\Models\Concerns\KeepsDeletedModels;
+// use Illuminate\Database\Eloquent\SoftDeletes;
 
 class {{ class }} extends ModelBaseTimeStamps implements HasMedia
 {
     use InteractsWithMedia, LogsActivity, HasTags;
-    use SoftDeletes;
+    // use SoftDeletes;
+    use KeepsDeletedModels;
     
     {{ factory }}
 
