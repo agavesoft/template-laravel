@@ -3,7 +3,7 @@
     "name": "agavesoft/template-laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework in Agavesoft.",
-    "version": "v1.4.2",
+    "version": "v1.4.3",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
