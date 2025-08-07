@@ -14,7 +14,10 @@
     </testsuites>
     <source>
         <include>
-            <directory>app</directory>
+            <directory>app/Console/Commands</directory>
+            <directory>app/Filament</directory>
+            <directory>app/Models</directory>
+            <directory>app/Http/Controllers</directory>
         </include>
     </source>
     <coverage>
