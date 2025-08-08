@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Traits\ModelActionBy;
 /**
  * @OA\Schema(
@@ -17,7 +16,7 @@ class ModelBaseTimeStamps extends ModelBase
     /**
      * Traits utilizados por el modelo.
      */
-    use SoftDeletes, ModelActionBy;
+    use ModelActionBy;
 
     /**
      * @OA\Property(

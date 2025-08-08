@@ -47,19 +47,15 @@ class MakeServiceCommand extends Command
 
         File::ensureDirectoryExists(app_path('Services'));
 
-        File::put($path, <<<PHP
-<?php
+        // Usar el stub para generar el servicio
+        $stub = File::get(base_path('stubs/service.create.stub'));
+        $content = str_replace(
+            ['{{ namespace }}', '{{ class }}'],
+            [$namespace, $serviceName],
+            $stub
+        );
 
-namespace {$namespace};
-
-class {$serviceName}
-{
-    public function __construct()
-    {
-        //
-    }
-}
-PHP);
+        File::put($path, $content);
 
         $this->info("Servicio {$serviceName} creado exitosamente.");
     }

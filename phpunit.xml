@@ -14,9 +14,20 @@
     </testsuites>
     <source>
         <include>
-            <directory>app</directory>
+            <directory>app/Console/Commands</directory>
+            <directory>app/Filament</directory>
+            <directory>app/Models</directory>
+            <directory>app/Http/Controllers</directory>
+            <directory>app/Traits</directory>
+            <!-- <directory>app</directory> -->
         </include>
     </source>
+    <coverage>
+        <report>
+            <html outputDirectory="coverage"/>
+            <text outputFile="php://stdout"/>
+        </report>
+    </coverage>
     <php>
         <env name="APP_ENV" value="testing"/>
         <env name="APP_MAINTENANCE_DRIVER" value="file"/>

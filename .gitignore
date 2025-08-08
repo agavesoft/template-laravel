@@ -24,3 +24,10 @@ yarn-error.log
 /.zed
 composer.lock
 package-lock.json
+
+# Archivos del coverage de pruebas
+/coverage/
+/pest-coverage/
+coverage.xml
+coverage.clover
+badge-coverage.svg
