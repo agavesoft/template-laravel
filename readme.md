@@ -85,10 +85,11 @@
 - Node.js 18+
 - npm/yarn
 
-### 1. Clonar el repositorio
+### 1. Crear un nuevo proyecto
+
 ```bash
-git clone https://github.com/agavesoft/template-laravel.git
-cd template-laravel
+composer create-project agavesoft/template-laravel nombredelproyecto
+cd nombredelproyecto
 ```
 
 ### 2. Instalar dependencias
@@ -100,28 +101,9 @@ composer install
 npm install
 ```
 
-### 3. Configuración inicial
+### 3. Crear usuario administrador
 ```bash
-# Copiar archivo de entorno
-cp .env.example .env
-
-# Generar key de aplicación
-php artisan key:generate
-
-# Crear base de datos SQLite (o configurar MySQL en .env)
-touch database/database.sqlite
-
-# Ejecutar migraciones
-php artisan migrate --seed
-
-# Crear enlace de storage
-php artisan storage:link
-```
-
-### 4. Configurar Filament
-```bash
-# Crear usuario administrador
-php artisan make:filament-user
+php artisan db:user
 ```
 
 ## 🚀 Desarrollo
