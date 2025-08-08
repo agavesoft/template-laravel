@@ -18,6 +18,7 @@
             <directory>app/Filament</directory>
             <directory>app/Models</directory>
             <directory>app/Http/Controllers</directory>
+            <!-- <directory>app/Traits</directory> -->
             <!-- <directory>app</directory> -->
         </include>
     </source>
