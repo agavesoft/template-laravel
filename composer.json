@@ -3,7 +3,7 @@
     "name": "agavesoft/template-laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework in Agavesoft.",
-    "version": "v1.4.7",
+    "version": "v1.5.0",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
@@ -32,10 +32,10 @@
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
-        "pestphp/pest": "^3.8",
-        "pestphp/pest-plugin-drift": "^3.0",
-        "pestphp/pest-plugin-laravel": "^3.2",
-        "pestphp/pest-plugin-livewire": "^3.0"
+        "pestphp/pest": "^4.0",
+        "pestphp/pest-plugin-drift": "^4.0",
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "pestphp/pest-plugin-livewire": "^4.0"
     },
     "autoload": {
         "psr-4": {
