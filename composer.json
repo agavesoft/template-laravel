@@ -3,7 +3,7 @@
     "name": "agavesoft/template-laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework in Agavesoft.",
-    "version": "v1.5.0",
+    "version": "v1.5.1",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
@@ -13,6 +13,7 @@
         "filament/spatie-laravel-media-library-plugin": "^4.0",
         "filament/spatie-laravel-tags-plugin": "^4.0",
         "inertiajs/inertia-laravel": "^2.0",
+        "jacobtims/filament-logger": "^1.0",
         "laravel/framework": "^12.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.10.1",
