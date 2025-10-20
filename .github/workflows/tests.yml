@@ -5,6 +5,7 @@ on:
     branches:
       - develop
       - main
+      - v12.f3-dev
   pull_request:
     branches:
       - develop
