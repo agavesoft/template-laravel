@@ -25,7 +25,7 @@ it('can render index page', function () {
 });
 
 it('can render list users', function () {
-    livewire(Users\Pages\ListUsers::class)->assertSuccessful();
+    livewire(ListUsers::class)->assertSuccessful();
 });
 
 it('can render create user page', function () {
